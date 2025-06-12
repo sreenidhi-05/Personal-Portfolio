@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreenidhi</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Peddadla Sai Sreenidhi </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-card">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Introduction -->
+    <header style="
+        height: 100vh;
+        background: url('images/bg.jpg') center center/cover no-repeat;
+        position: relative;
+        color: #fff;
+        display: flex;
+        align-items: center;
+    " class="text-center" data-aos="fade-up">
+        <div style="background: rgba(0,0,0,0.5); position: absolute; inset: 0; z-index: 1;"></div>
+        <div class="container text-white" style="position: relative; z-index: 2;">
+            <h1 class="display-4 fw-bold">Hi, I am <span class="text-dark">Sreenidhi</span></h1>
+            <p class="lead">Aspiring AI & ML Innovator | Full-Stack Developer | DSA Enthusiast | Eager to Learn & Build
+                Impactful Tech</p>
+            <a href="#projects" class="scroll-down-arrow" style="display: inline-block; margin-top: 2rem; position: relative; z-index: 2;">
+                <span style="display: block; font-size: 2.5rem; color: #fff; animation: bounce 1.5s infinite;">
+                    <i class="fa-solid fa-angle-down"></i>
+                </span>
+                <span class="visually-hidden">Scroll Down</span>
+            </a>
+        </div>
+    </header>
+    <!-- About -->
+    <section id="about-card" class="bg-dark text-white py-5 sec">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">About me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="card about-card p-4 shadow-sm border-0">
+                        <div class="row align-items-center">
+                            <div class="col-md-5" data-aos="fade-right">
+                                <img src="images/profile.jpg" alt="My Photo" class="img-fluid rounded about-img">
+                            </div>
+                            <div class="col-md-7" data-aos="fade-left">
+                                <p class="about-desc">Hi! I'm a passionate Computer Science student with a focus on Artificial Intelligence and
+                                    Machine
+                                    Learning. I enjoy working with Python and Java, and I have hands-on experience in
+                                    full-stack web
+                                    development. With a strong grasp of data structures and algorithms, I love tackling
+                                    real-world problems through code. I'm always
+                                    exploring new technologies and taking on opportunities that help me grow and contribute
+                                    meaningfully to the tech world.</p>
+                                <ul>
+                                    <li><strong>Education:</strong> B.Tech in AIML</li>
+                                    <li><strong>Languages:</strong> English, Telugu, Hindi</li>
+                                    <li><strong>Interests:</strong> AI, Web Development, Problem Solving</li>
+                                    <li><strong>Strengths:</strong> Quick Learner, Creative Thinker, Team Player</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6">
+                    <div class="card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="images/project-1.png" class="card-img-top" alt="...">
+                            <div class="project-overlay">
+                                <div>
+                                    <h5 class="card-title">Enhanced Oral Squamous Cell Carcinoma Detection</h5>
+                                    <div class="mb-2">
+                                        <span class="badge bg-primary">Python</span>
+                                        <span class="badge bg-success">TensorFlow</span>
+                                        <span class="badge bg-warning text-dark">CNN</span>
+                                    </div>
+                                    <ul class="text-start">
+                                        <li>Developed a deep learning-based binary image classification model using custom
+                                            CNN architecture to detect OSCC from histopathological images.</li>
+                                        <li> Utilized TensorFlow and Keras for model training and evaluation, achieving an accuracy of 91% on the test set.</li>
+                                    </ul>
+                                    <a href="https://github.com/sreenidhi-05/Enhanced-OSCC"
+                                        class="btn btn-outline-primary btn-sm">Visit Github</a>
+                                    <!-- <a href="#" class="btn btn-outline-success btn-sm ms-2 disabled">Live Demo</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-6">
+                    <div class="card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="images/project-2.png" class="card-img-top" alt="...">
+                            <div class="project-overlay">
+                                <div>
+                                    <h5 class="card-title">Crop and Fertilizer Recommendation System</h5>
+                                    <div class="mb-2">
+                                        <span class="badge bg-primary">Python</span>
+                                        <span class="badge bg-info text-dark">Flask</span>
+                                        <span class="badge bg-success">Machine Learning</span>
+                                    </div>
+                                    <ul class="text-start">
+                                        <li> Developed a machine learning model using Random Forest to predict suitable crops and
+                                            fertilizers based on soil parameters.</li>
+                                        <li> Utilized Flask to create a user-friendly web application to receive crop and fertilizer recommendations.</li>
+                                    </ul>
+                                    <a href="https://github.com/sreenidhi-05/Crop_and_fertilizer_recommendation"
+                                        class="btn btn-outline-primary btn-sm">Visit Github</a>
+                                    <!-- <a href="#" class="btn btn-outline-success btn-sm ms-2 disabled">Live Demo</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-6">
+                    <div class="card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="images/project-3.png" class="card-img-top" alt="...">
+                            <div class="project-overlay">
+                                <div>
+                                    <h5 class="card-title">A secure Login page</h5>
+                                    <div class="mb-2">
+                                        <span class="badge bg-warning text-dark">PHP</span>
+                                        <span class="badge bg-primary">MySQL</span>
+                                        <span class="badge bg-info text-dark">HTML & CSS</span>
+                                    </div>
+                                    <ul class="text-start">
+                                        <li>Developed a secure PHP-based login system with user registration, session
+                                            handling, and password recovery.</li>
+                                        <li>Integrated PHPMailer for email-based password reset functionality.</li>
+                                        <li>Implemented and tested full authentication flow using XAMPP for local
+                                            deployment.</li>
+                                    </ul>
+                                    <a href="https://github.com/sreenidhi-05/Login-page"
+                                        class="btn btn-outline-primary btn-sm">Visit Github</a>
+                                    <!-- <a href="#" class="btn btn-outline-success btn-sm ms-2 disabled">Live Demo</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>  
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="text-center my-5">My Skills</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="skill-progress">
+                        <span class="skill-icon"><i class="fa-brands fa-html5" style="color:#e44d26"></i></span>
+                        <span class="skill-label">HTML</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="skill-progress" >
+                        <span class="skill-icon"><i class="fa-brands fa-css3-alt" style="color:#1572b6"></i></span>
+                        <span class="skill-label">CSS</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="skill-progress">
+                        <span class="skill-icon"><i class="fa-brands fa-js" style="color:#f7df1e"></i></span>
+                        <span class="skill-label">JavaScript</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="skill-progress">
+                        <span class="skill-icon"><i class="fa-brands fa-python" style="color:#3776ab"></i></span>
+                        <span class="skill-label">Python</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="skill-progress">
+                        <span class="skill-icon"><i class="fa-brands fa-java" style="color:#f89820"></i></span>
+                        <span class="skill-label">Java</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="skill-progress">
+                        <span class="skill-icon"><i class="fa-solid fa-database" style="color:#00758f"></i></span>
+                        <span class="skill-label">MySQL</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="skill-progress">
+                        <span class="skill-icon"><i class="fa-brands fa-php" style="color:#777bb4"></i></span>
+                        <span class="skill-label">PHP</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="skill-progress">
+                        <span class="skill-icon"><i class="fa-solid fa-code" style="color:#e67e22"></i></span>
+                        <span class="skill-label">DSA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    <!--contact  -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-center my-5">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-4">
+                    <div class="card shadow-sm p-4">
+                        <h4>Get In Touch</h4>
+                        <p><i class="fa-solid fa-envelope"></i> sreenidhi0705@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +91 8498874400</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana</p>
+                        <div class="mt-3">
+                            <a href="https://www.linkedin.com/in/sai-sreenidhi-peddadla-1472942a6/" target="_blank"
+                                title="LinkedIn" class="me-3 fs-3 text-primary">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/sreenidhi-05" target="_blank" title="GitHub" class="fs-3"
+                                style="color: #121212;">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="text-center py-3 text-white">
+        <p>&copy; 2025 Sreenidhi | All rights Reserved</p>
+    </footer>
+
+    <!--Bootstrap Script Link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        once: true      
+      });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
