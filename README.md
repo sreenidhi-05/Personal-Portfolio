@@ -14,7 +14,6 @@ This is my personal portfolio website that highlights my skills, projects, and b
 - Smooth scroll navigation
 - Scroll-based animations using AOS and JavaScript
 - Project showcase section
-- Contact form integration (optional)
 - Clean and modern dark theme
 
 ## 📸 Live Preview
