@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sreenidhi</title>
     <link href="css/style.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -31,6 +33,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificates">Certificates</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
@@ -100,96 +105,106 @@
     </section>
     <!-- Projects -->
     <section id="projects">
-        <div class="container">
+        <div class="project-container">
             <h2 class="text-center mb-5">Projects</h2>
-            <div class="row g-4">
+            <div class="card__container">
                 <!-- Project 1 -->
-                <div class="col-md-6">
-                    <div class="card project-card">
-                        <div class="project-img-wrapper">
-                            <img src="images/project-1.png" class="card-img-top" alt="...">
-                            <div class="project-overlay">
-                                <div>
-                                    <h5 class="card-title">Enhanced Oral Squamous Cell Carcinoma Detection</h5>
-                                    <div class="mb-2">
-                                        <span class="badge bg-primary">Python</span>
-                                        <span class="badge bg-success">TensorFlow</span>
-                                        <span class="badge bg-warning text-dark">CNN</span>
-                                    </div>
-                                    <ul class="text-start">
-                                        <li>Developed a deep learning-based binary image classification model using custom
-                                            CNN architecture to detect OSCC from histopathological images.</li>
-                                        <li> Utilized TensorFlow and Keras for model training and evaluation, achieving an accuracy of 91% on the test set.</li>
-                                    </ul>
-                                    <a href="https://github.com/sreenidhi-05/Enhanced-OSCC"
-                                        class="btn btn-outline-primary btn-sm">Visit Github</a>
-                                    <!-- <a href="#" class="btn btn-outline-success btn-sm ms-2 disabled">Live Demo</a> -->
-                                </div>
-                            </div>
-                        </div>
+                <article class="card__article">
+                    <img src="images/project-1.png" alt="Project 1" class="card__img">
+                    <div class="card__data">
+                        <span class="card__description">Deep Learning</span>
+                        <h2 class="card__title">Enhanced OSCC Detection</h2>
+                        <a href="https://github.com/sreenidhi-05/Enhanced-OSCC" target="_blank" class="card__button">View on
+                            GitHub</a>
                     </div>
-                </div>
+                </article>
                 <!-- Project 2 -->
-                <div class="col-md-6">
-                    <div class="card project-card">
-                        <div class="project-img-wrapper">
-                            <img src="images/project-2.png" class="card-img-top" alt="...">
-                            <div class="project-overlay">
-                                <div>
-                                    <h5 class="card-title">Crop and Fertilizer Recommendation System</h5>
-                                    <div class="mb-2">
-                                        <span class="badge bg-primary">Python</span>
-                                        <span class="badge bg-info text-dark">Flask</span>
-                                        <span class="badge bg-success">Machine Learning</span>
-                                    </div>
-                                    <ul class="text-start">
-                                        <li> Developed a machine learning model using Random Forest to predict suitable crops and
-                                            fertilizers based on soil parameters.</li>
-                                        <li> Utilized Flask to create a user-friendly web application to receive crop and fertilizer recommendations.</li>
-                                    </ul>
-                                    <a href="https://github.com/sreenidhi-05/Crop_and_fertilizer_recommendation"
-                                        class="btn btn-outline-primary btn-sm">Visit Github</a>
-                                    <!-- <a href="#" class="btn btn-outline-success btn-sm ms-2 disabled">Live Demo</a> -->
-                                </div>
-                            </div>
+                <article class="card__article">
+                    <img src="images/project-2.png" alt="Project 2" class="card__img">
+                    <div class="card__data">
+                        <span class="card__description">Machine Learning</span>
+                        <h2 class="card__title">Crop & Fertilizer Recommendation</h2>
+                        <a href="https://github.com/sreenidhi-05/Crop_and_fertilizer_recommendation" target="_blank"
+                            class="card__button">View on GitHub</a>
+                    </div>
+                </article>
+                <!-- Project 3 -->
+                <article class="card__article">
+                    <img src="images/project-3.png" alt="Project 3" class="card__img">
+                    <div class="card__data">
+                        <span class="card__description">Web Security</span>
+                        <h2 class="card__title">Secure Login Page</h2>
+                        <a href="https://github.com/sreenidhi-05/Login-page" target="_blank" class="card__button">View on
+                            GitHub</a>
+                    </div>
+                </article>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+        </section>
+    <!-- Certificates -->
+<section id="certificates" class="bg-dark py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 text-white">Certificates</h2>
+        <div class="swiper certificates-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card shadow-sm">
+                        <img src="images/certificate-1.png" alt="Certificate 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Edunet Foundation</h5>
+                            <p class="card-text">Virtual internship Certificate</p>
+                            <a href="https://drive.google.com/drive/folders/1FvIJs4bMSrK4L7extp7i0QRrBRvHZrqu"
+                                target="_blank" class="btn btn-dark">View Certificate</a>
                         </div>
                     </div>
                 </div>
-                <!-- Project 3 -->
-                <div class="col-md-6">
-                    <div class="card project-card">
-                        <div class="project-img-wrapper">
-                            <img src="images/project-3.png" class="card-img-top" alt="...">
-                            <div class="project-overlay">
-                                <div>
-                                    <h5 class="card-title">A secure Login page</h5>
-                                    <div class="mb-2">
-                                        <span class="badge bg-warning text-dark">PHP</span>
-                                        <span class="badge bg-primary">MySQL</span>
-                                        <span class="badge bg-info text-dark">HTML & CSS</span>
-                                    </div>
-                                    <ul class="text-start">
-                                        <li>Developed a secure PHP-based login system with user registration, session
-                                            handling, and password recovery.</li>
-                                        <li>Integrated PHPMailer for email-based password reset functionality.</li>
-                                        <li>Implemented and tested full authentication flow using XAMPP for local
-                                            deployment.</li>
-                                    </ul>
-                                    <a href="https://github.com/sreenidhi-05/Login-page"
-                                        class="btn btn-outline-primary btn-sm">Visit Github</a>
-                                    <!-- <a href="#" class="btn btn-outline-success btn-sm ms-2 disabled">Live Demo</a> -->
-                                </div>
-                            </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-sm">
+                        <img src="images/Certificate-2.png" alt="Certificate 2" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cisco Networking Academy in collaboration with OpenEDG Python Institute</h5>
+                            <p class="card-text">PCAP: Programming Essentials in Python</p>
+                            <a href="https://drive.google.com/file/d/1InzhS3nhM5HqsoI8fZEiLnH2WFQ_o4g3/view?usp=sharing"
+                                target="_blank" class="btn btn-dark">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-sm">
+                        <img src="images/Certificate-3.png" alt="Certificate 3" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">AWS-academy</h5>
+                            <p class="card-text">Machine Learning Foundations</p>
+                            <a href="https://drive.google.com/file/d/1JFNK49bTuhjvfxxwUakW1qqqGvMDAhca/view?usp=sharing" target="_blank"
+                                class="btn btn-dark">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-sm">
+                        <img src="images/Certificate-4.png" alt="Certificate 4" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">MongoDB University</h5>
+                            <p class="card-text">Introduction To MongoDB</p>
+                            <a href="https://learn.mongodb.com/c/6Aoudm9BQ6KauNL0JC-ZCg" target="_blank"
+                                class="btn btn-dark">View Certificate</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Swiper navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Swiper pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-        </section>  
+    </div>
+</section>
     <!-- Skills -->
     <section id="skills">
         <div class="container">
-            <h2 class="text-center my-5">My Skills</h2>
+            <h2 class="text-center my-5 text-dark">My Skills</h2>
             <div class="row justify-content-center">
                 <div class="col-md-2 col-6 mb-4">
                     <div class="skill-progress">
@@ -243,9 +258,9 @@
         </div>
         </section>
     <!--contact  -->
-    <section id="contact">
+    <section id="contact" class="bg-dark py-5">
         <div class="container">
-            <h2 class="text-center my-5">Contact Me</h2>
+            <h2 class="text-center my-5 text-white">Contact Me</h2>
             <div class="row justify-content-center">
                 <div class="col-md-5 mb-4">
                     <div class="card shadow-sm p-4">
@@ -279,6 +294,8 @@
         crossorigin="anonymous"></script>
     <!-- AOS Animation Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       AOS.init({
         duration: 1500,
